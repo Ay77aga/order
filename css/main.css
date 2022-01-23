@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  body {
+    background: url("../images/pattern-background-mobile.svg") no-repeat hsl(225, 100%, 94%);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url("../images/pattern-background-desktop.svg") no-repeat hsl(225, 100%, 94%);
+  }
+
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+  width: 375px;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 0 8px 15px #D6E1FF;
+}
+
+.container>img {
+  width: 100%;
+}
+
+.container>h2 {
+  margin: 15px auto;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.container>p {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  padding: 5px 15px;
+}
+
+.container>div {
+  display: flex;
+  width: 80%;
+  background-color: hsl(225, 100%, 98%);
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container>div>div {
+  padding-right: 10px;
+
+}
+
+.container>div>div p:first-child {
+  font-weight: 700;
+}
+
+.container>div>div p:last-child {
+  color: hsl(224, 23%, 55%);
+}
+
+button {
+  width: 85%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 20px 8px hsl(225, 100%, 94%)
+}
+.container> p:last-child{
+  margin: 20px auto;
+  font-weight: 700;
+}
+a{
+  font-weight: 700;
+}
+.container p:last-child,
+button{
+  cursor: pointer;
+}
+
